@@ -165,7 +165,7 @@ class WorkerConfiguration(LoggingMixin):
             self.dags_volume_name: {
                 'name': self.dags_volume_name,
                 'mountPath': self.generate_dag_volume_mount_path(),
-                'readOnly': True,
+                'readOnly': False,
             },
             self.logs_volume_name: {
                 'name': self.logs_volume_name,
